@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qbiztax | Australian Tax & Business Advisory — Plan. Save. Grow.</title>
+  <meta name="description" content="Qbiztax delivers expert tax returns, bookkeeping, payroll, advisory, and SMSF services across Australia. Modern, proactive, and built for business growth." />
+  <meta name="keywords" content="Australian tax advisory, tax returns Australia, bookkeeping payroll, SMSF advisory, business advisory Australia, Qbiztax" />
+  <meta property="og:title" content="Qbiztax | Australian Tax & Business Advisory" />
+  <meta property="og:description" content="Weightless strategy. Grounded results. Expert tax and business advisory for Australian businesses." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="main-nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo" id="nav-logo">
+        <div class="nav__logo-icon">Q</div>
+        <div class="nav__logo-text">
+          <span class="nav__brand">biztax</span>
+          <span class="nav__tagline">PLAN · SAVE · GROW</span>
+        </div>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#hero" class="nav__link active" id="nav-home">Home</a></li>
+        <li><a href="#about" class="nav__link" id="nav-about">About Us</a></li>
+        <li class="nav__dropdown">
+          <a href="#services" class="nav__link" id="nav-services">Services <span class="nav__chevron">▾</span></a>
+          <div class="nav__dropdown-menu" id="nav-dropdown-menu">
+            <a href="#tax-returns" class="nav__dropdown-item" id="nav-tax">Tax Returns</a>
+            <a href="#bookkeeping" class="nav__dropdown-item" id="nav-book">Bookkeeping &amp; Payroll</a>
+            <a href="#advisory" class="nav__dropdown-item" id="nav-advisory">Advisory &amp; SMSF</a>
+          </div>
+        </li>
+        <li><a href="#insights" class="nav__link" id="nav-insights">Insights</a></li>
+        <li><a href="#contact" class="nav__link" id="nav-contact">Contact Us</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--nav" id="nav-cta">Book a Free Call &rarr;</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__grid-overlay"></div>
+    <div class="hero__container">
+      <div class="hero__content">
+        <div class="hero__badge reveal-fade" id="hero-badge">
+          <span class="hero__badge-dot"></span>
+          ATO Registered Tax Agents &middot; Australia-Wide
+        </div>
+        <h1 class="hero__headline reveal-up" id="hero-headline">
+          <span class="hero__headline-top">Your Numbers.</span>
+          <span class="hero__headline-gradient">Elevated.</span>
+        </h1>
+        <p class="hero__subheadline reveal-up delay-1" id="hero-subheadline">
+          We go beyond the spreadsheet. Qbiztax delivers proactive tax strategy,
+          bulletproof bookkeeping, and growth-focused advisory &mdash; so you can focus on
+          what actually moves the needle.
+        </p>
+        <div class="hero__ctas reveal-up delay-2" id="hero-ctas">
+          <a href="#contact" class="btn btn--primary" id="hero-cta-primary">
+            <span>Book a Free Strategy Call</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#services" class="btn btn--ghost" id="hero-cta-ghost">Explore Services</a>
+        </div>
+        <div class="hero__trust reveal-fade delay-3" id="hero-trust">
+          <div class="hero__trust-item">
+            <span class="hero__trust-num">500+</span>
+            <span class="hero__trust-label">Clients Served</span>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-num">$12M+</span>
+            <span class="hero__trust-label">Tax Savings Facilitated</span>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-num">98%</span>
+            <span class="hero__trust-label">Client Retention Rate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" id="hero-visual">
+        <div class="hero__float-scene">
+          <div class="hero__img-wrap float-slow">
+            <img src="hero_3d_elements.jpg" alt="Qbiztax floating financial elements 3D" class="hero__img" id="hero-img" />
+            <div class="hero__img-glow"></div>
+          </div>
+          <div class="float-card float-card--1 float-medium" id="float-card-1">
+            <div class="float-card__icon">&#128202;</div>
+            <div class="float-card__body">
+              <div class="float-card__label">FY2024 Tax Return</div>
+              <div class="float-card__value text-green">&#10003; Lodged &amp; Saved</div>
+            </div>
+          </div>
+          <div class="float-card float-card--2 float-fast" id="float-card-2">
+            <div class="float-card__icon">&#128176;</div>
+            <div class="float-card__body">
+              <div class="float-card__label">Tax Saved This Month</div>
+              <div class="float-card__value">$4,820</div>
+            </div>
+          </div>
+          <div class="float-card float-card--3 float-slow" id="float-card-3">
+            <div class="float-card__icon">&#127974;</div>
+            <div class="float-card__body">
+              <div class="float-card__label">SMSF Balance</div>
+              <div class="float-card__value text-gold">&#8593; 22.4%</div>
+            </div>
+          </div>
+          <div class="crystal crystal--1"></div>
+          <div class="crystal crystal--2"></div>
+          <div class="crystal crystal--3"></div>
+          <div class="crystal crystal--4"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" id="hero-scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar" id="trust-bar">
+    <div class="trust-bar__track">
+      <div class="trust-bar__items">
+        <span>ATO Registered Agents</span><span class="trust-bar__dot">&#9670;</span>
+        <span>CPA Qualified</span><span class="trust-bar__dot">&#9670;</span>
+        <span>Xero Certified Partners</span><span class="trust-bar__dot">&#9670;</span>
+        <span>MYOB Advisors</span><span class="trust-bar__dot">&#9670;</span>
+        <span>QuickBooks ProAdvisors</span><span class="trust-bar__dot">&#9670;</span>
+        <span>Serving All Australian States</span><span class="trust-bar__dot">&#9670;</span>
+        <span>ATO Registered Agents</span><span class="trust-bar__dot">&#9670;</span>
+        <span>CPA Qualified</span><span class="trust-bar__dot">&#9670;</span>
+        <span>Xero Certified Partners</span><span class="trust-bar__dot">&#9670;</span>
+        <span>MYOB Advisors</span><span class="trust-bar__dot">&#9670;</span>
+        <span>QuickBooks ProAdvisors</span><span class="trust-bar__dot">&#9670;</span>
+        <span>Serving All Australian States</span><span class="trust-bar__dot">&#9670;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALUE PROPOSITION -->
+  <section class="value" id="value">
+    <div class="section-container">
+      <div class="section-label reveal-fade" id="value-label">WHY QBIZTAX</div>
+      <h2 class="section-title reveal-up" id="value-title">
+        Most accountants file.<br/><span class="gradient-text">We strategise.</span>
+      </h2>
+      <p class="section-subtitle reveal-up delay-1" id="value-subtitle">
+        We&rsquo;re not just number-crunchers &mdash; we&rsquo;re proactive partners who anticipate your financial future, 
+        protect your wealth, and unlock opportunities most accountants miss.
+      </p>
+      <div class="value__grid">
+        <div class="value__card glass-card reveal-up delay-1" id="value-card-1">
+          <div class="value__card-icon" style="background:linear-gradient(135deg,#4F46E5,#7C3AED)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 class="value__card-title">Proactive, Not Reactive</h3>
+          <p class="value__card-text">We contact you before the ATO does. Year-round monitoring means zero nasty surprises at tax time.</p>
+          <div class="value__card-glow" style="background:#4F46E5"></div>
+        </div>
+        <div class="value__card glass-card reveal-up delay-2" id="value-card-2">
+          <div class="value__card-icon" style="background:linear-gradient(135deg,#06B6D4,#0EA5E9)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="value__card-title">Time-Back Guarantee</h3>
+          <p class="value__card-text">You didn&rsquo;t start a business to drown in paperwork. We handle the complexity &mdash; you reclaim your hours.</p>
+          <div class="value__card-glow" style="background:#06B6D4"></div>
+        </div>
+        <div class="value__card glass-card reveal-up delay-3" id="value-card-3">
+          <div class="value__card-icon" style="background:linear-gradient(135deg,#F59E0B,#EF4444)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3 class="value__card-title">Premium Advice, Clear Fees</h3>
+          <p class="value__card-text">Big-firm expertise without the big-firm price tag. Fixed-fee packages, no billing surprises, ever.</p>
+          <div class="value__card-glow" style="background:#F59E0B"></div>
+        </div>
+        <div class="value__card glass-card reveal-up delay-4" id="value-card-4">
+          <div class="value__card-icon" style="background:linear-gradient(135deg,#10B981,#059669)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="value__card-title">ATO-Audit Ready</h3>
+          <p class="value__card-text">Every submission is bulletproof. We stand by our work &mdash; and stand beside you if the ATO comes knocking.</p>
+          <div class="value__card-glow" style="background:#10B981"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services__bg-glow"></div>
+    <div class="section-container">
+      <div class="section-label reveal-fade" id="services-label">WHAT WE DO</div>
+      <h2 class="section-title reveal-up" id="services-title">
+        Everything your finances need,<br/><span class="gradient-text">under one roof.</span>
+      </h2>
+
+      <!-- Service 1: Tax Returns -->
+      <div class="service-block" id="tax-returns">
+        <div class="service-block__visual reveal-left" id="service-tax-visual">
+          <div class="service-block__card-scene">
+            <div class="service__glass-card glass-card float-slow">
+              <div class="service__glass-icon">&#129534;</div>
+              <div class="service__glass-title">Individual Return</div>
+              <div class="service__glass-line"></div>
+              <div class="service__glass-row"><span>Gross Income</span><span>$120,000</span></div>
+              <div class="service__glass-row"><span>Deductions</span><span class="text-cyan">&minus;$18,400</span></div>
+              <div class="service__glass-row"><span>Tax Payable</span><span>$31,847</span></div>
+              <div class="service__glass-row highlight"><span>Refund Due</span><span class="text-green">$4,200 &#8593;</span></div>
+            </div>
+            <div class="service-block__orb service-block__orb--1"></div>
+            <div class="service-block__orb service-block__orb--2"></div>
+          </div>
+        </div>
+        <div class="service-block__content reveal-right" id="service-tax-content">
+          <div class="service-block__tag" style="color:#4F46E5;background:rgba(79,70,229,0.12)">Tax Returns</div>
+          <h3 class="service-block__title">Every dollar you&rsquo;re owed. Claimed.</h3>
+          <p class="service-block__desc">Whether you&rsquo;re a sole trader chasing deductions, a company navigating Division 7A, or an individual with multiple income streams &mdash; we file smart, not just fast.</p>
+          <ul class="service-block__list">
+            <li><span class="list-check">&#10003;</span> Individual, Company, Trust &amp; SMSF Returns</li>
+            <li><span class="list-check">&#10003;</span> Maximised deductions &mdash; we dig deeper than you expect</li>
+            <li><span class="list-check">&#10003;</span> ATO correspondence managed on your behalf</li>
+            <li><span class="list-check">&#10003;</span> Fast-tracked lodgement for eligible clients</li>
+            <li><span class="list-check">&#10003;</span> Capital Gains Tax (CGT) optimisation</li>
+          </ul>
+          <a href="#contact" class="btn btn--service" id="tax-cta">Get Your Return Filed &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Service 2: Bookkeeping & Payroll -->
+      <div class="service-block service-block--reverse" id="bookkeeping">
+        <div class="service-block__content reveal-left" id="service-book-content">
+          <div class="service-block__tag" style="color:#06B6D4;background:rgba(6,182,212,0.12)">Bookkeeping &amp; Payroll</div>
+          <h3 class="service-block__title">Clean books. Confident decisions.</h3>
+          <p class="service-block__desc">Messy financials cost you money and peace of mind. Our cloud-first bookkeeping keeps your records razor-sharp, your payroll compliant, and your BAS stress-free.</p>
+          <ul class="service-block__list">
+            <li><span class="list-check" style="color:#06B6D4">&#10003;</span> Monthly &amp; Quarterly Bookkeeping (Xero, MYOB, QuickBooks)</li>
+            <li><span class="list-check" style="color:#06B6D4">&#10003;</span> STP Phase 2 Payroll Processing</li>
+            <li><span class="list-check" style="color:#06B6D4">&#10003;</span> BAS &amp; IAS preparation and lodgement</li>
+            <li><span class="list-check" style="color:#06B6D4">&#10003;</span> Accounts payable/receivable management</li>
+            <li><span class="list-check" style="color:#06B6D4">&#10003;</span> Cash flow forecasting &amp; reporting dashboards</li>
+          </ul>
+          <a href="#contact" class="btn btn--service btn--service-cyan" id="book-cta">Fix Your Books Today &rarr;</a>
+        </div>
+        <div class="service-block__visual reveal-right" id="service-book-visual">
+          <div class="service-block__card-scene">
+            <div class="service__glass-card service__glass-card--cyan glass-card float-medium">
+              <div class="service__glass-icon">&#128218;</div>
+              <div class="service__glass-title">Monthly Dashboard</div>
+              <div class="service__glass-line" style="background:#06B6D4"></div>
+              <div class="service__chart-bars">
+                <div class="bar-item"><div class="bar" style="height:60%;background:rgba(6,182,212,0.6)"></div><span>Jul</span></div>
+                <div class="bar-item"><div class="bar" style="height:75%;background:rgba(6,182,212,0.7)"></div><span>Aug</span></div>
+                <div class="bar-item"><div class="bar" style="height:55%;background:rgba(6,182,212,0.5)"></div><span>Sep</span></div>
+                <div class="bar-item"><div class="bar" style="height:85%;background:rgba(6,182,212,0.8)"></div><span>Oct</span></div>
+                <div class="bar-item"><div class="bar" style="height:95%;background:#06B6D4"></div><span>Nov</span></div>
+                <div class="bar-item"><div class="bar" style="height:90%;background:#06B6D4"></div><span>Dec</span></div>
+              </div>
+              <div class="service__glass-row highlight" style="border-color:rgba(6,182,212,0.3)"><span>Revenue Trend</span><span class="text-cyan">&#8593; 34% YoY</span></div>
+            </div>
+            <div class="service-block__orb service-block__orb--1" style="background:radial-gradient(circle,rgba(6,182,212,0.4),transparent)"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3: Advisory & SMSF -->
+      <div class="service-block" id="advisory">
+        <div class="service-block__visual reveal-left" id="service-adv-visual">
+          <div class="service-block__card-scene">
+            <div class="service__glass-card service__glass-card--gold glass-card float-slow">
+              <div class="service__glass-icon">&#127963;</div>
+              <div class="service__glass-title">SMSF Portfolio Overview</div>
+              <div class="service__glass-line" style="background:#F59E0B"></div>
+              <div class="service__donut-wrap">
+                <div class="service__donut">
+                  <div class="service__donut-inner">
+                    <span class="text-gold">$1.2M</span>
+                    <small>Total Assets</small>
+                  </div>
+                </div>
+                <div class="service__donut-legend">
+                  <div><span style="color:#F59E0B">&#9632;</span> Australian Equities 45%</div>
+                  <div><span style="color:#4F46E5">&#9632;</span> Property 30%</div>
+                  <div><span style="color:#06B6D4">&#9632;</span> Intl Equities 15%</div>
+                  <div><span style="color:#10B981">&#9632;</span> Cash &amp; Bonds 10%</div>
+                </div>
+              </div>
+            </div>
+            <div class="service-block__orb service-block__orb--1" style="background:radial-gradient(circle,rgba(245,158,11,0.3),transparent)"></div>
+            <div class="service-block__orb service-block__orb--2" style="background:radial-gradient(circle,rgba(245,158,11,0.2),transparent)"></div>
+          </div>
+        </div>
+        <div class="service-block__content reveal-right" id="service-adv-content">
+          <div class="service-block__tag" style="color:#F59E0B;background:rgba(245,158,11,0.12)">Advisory &amp; SMSF</div>
+          <h3 class="service-block__title">Build wealth. Protect it. Leave a legacy.</h3>
+          <p class="service-block__desc">Strategic advisory and Self-Managed Super Fund expertise for Australians who want to take control of their financial future &mdash; not leave it to chance.</p>
+          <ul class="service-block__list">
+            <li><span class="list-check" style="color:#F59E0B">&#10003;</span> Business structure &amp; entity setup (Pty Ltd, Trust, Partnership)</li>
+            <li><span class="list-check" style="color:#F59E0B">&#10003;</span> SMSF establishment, compliance &amp; annual audit</li>
+            <li><span class="list-check" style="color:#F59E0B">&#10003;</span> Tax-effective investment strategies</li>
+            <li><span class="list-check" style="color:#F59E0B">&#10003;</span> Succession &amp; exit planning</li>
+            <li><span class="list-check" style="color:#F59E0B">&#10003;</span> ATO SMSF audit &amp; compliance lodgement</li>
+          </ul>
+          <a href="#contact" class="btn btn--service btn--service-gold" id="advisory-cta">Start Your Strategy Session &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__bg"></div>
+    <div class="section-container">
+      <div class="about__split">
+        <div class="about__left reveal-left" id="about-left">
+          <div class="section-label">ABOUT QBIZTAX</div>
+          <h2 class="section-title" id="about-title">
+            We built the firm we<br/><span class="gradient-text">wished we had.</span>
+          </h2>
+          <p class="about__text" id="about-text-1">
+            Qbiztax was born from a simple frustration: Australian businesses deserved better than reactive, 
+            checkbox-ticking accountants. They needed an advisor who thinks like a CFO, acts like a partner, 
+            and charges like a small firm.
+          </p>
+          <p class="about__text" id="about-text-2">
+            Today, we serve hundreds of clients across Australia &mdash; from first-year sole traders to 
+            established companies with complex structures &mdash; all with the same obsessive focus on 
+            maximising value and minimising stress.
+          </p>
+          <div class="about__pillars">
+            <div class="about__pillar" id="pillar-1">
+              <div class="about__pillar-num">01</div>
+              <div>
+                <div class="about__pillar-title">Plan</div>
+                <div class="about__pillar-desc">Forward-thinking tax planning year-round</div>
+              </div>
+            </div>
+            <div class="about__pillar" id="pillar-2">
+              <div class="about__pillar-num">02</div>
+              <div>
+                <div class="about__pillar-title">Save</div>
+                <div class="about__pillar-desc">Legally maximise every deduction available</div>
+              </div>
+            </div>
+            <div class="about__pillar" id="pillar-3">
+              <div class="about__pillar-num">03</div>
+              <div>
+                <div class="about__pillar-title">Grow</div>
+                <div class="about__pillar-desc">Advisory that scales as your business grows</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__right reveal-right" id="about-right">
+          <div class="about__stats-grid">
+            <div class="about__stat glass-card" id="about-stat-1">
+              <div class="about__stat-num gradient-text">500+</div>
+              <div class="about__stat-label">Active Clients</div>
+            </div>
+            <div class="about__stat glass-card" id="about-stat-2">
+              <div class="about__stat-num gradient-text">12+</div>
+              <div class="about__stat-label">Years Experience</div>
+            </div>
+            <div class="about__stat glass-card" id="about-stat-3">
+              <div class="about__stat-num gradient-text">98%</div>
+              <div class="about__stat-label">Retention Rate</div>
+            </div>
+            <div class="about__stat glass-card" id="about-stat-4">
+              <div class="about__stat-num gradient-text">$12M+</div>
+              <div class="about__stat-label">Tax Saved Annually</div>
+            </div>
+          </div>
+          <div class="about__badge-row">
+            <div class="about__badge-item glass-card" id="badge-ato">&#9889; ATO Registered</div>
+            <div class="about__badge-item glass-card" id="badge-xero">&#10022; Xero Certified</div>
+            <div class="about__badge-item glass-card" id="badge-cpa">&#127885; CPA Qualified</div>
+            <div class="about__badge-item glass-card" id="badge-myob">&#128202; MYOB Advisor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section class="insights" id="insights">
+    <div class="section-container">
+      <div class="section-label reveal-fade" id="insights-label">INSIGHTS &amp; RESOURCES</div>
+      <h2 class="section-title reveal-up" id="insights-title">
+        Tax intelligence,<br/><span class="gradient-text">delivered free.</span>
+      </h2>
+      <div class="insights__grid">
+        <article class="insight-card glass-card reveal-up delay-1" id="insight-1">
+          <div class="insight-card__tag">Tax Strategy</div>
+          <h4 class="insight-card__title">FY2025 Tax Planning Checklist: What Every Australian Business Needs to Do Now</h4>
+          <p class="insight-card__excerpt">With the ATO tightening scrutiny on contractor arrangements and work-from-home deductions, here&rsquo;s your complete pre-EOFY action plan.</p>
+          <div class="insight-card__meta"><span>June 2025</span><span class="insight-card__read">8 min read &rarr;</span></div>
+        </article>
+        <article class="insight-card glass-card reveal-up delay-2" id="insight-2">
+          <div class="insight-card__tag" style="color:#06B6D4;background:rgba(6,182,212,0.12)">SMSF</div>
+          <h4 class="insight-card__title">SMSF in 2025: New Rules, New Opportunities for High-Net-Worth Australians</h4>
+          <p class="insight-card__excerpt">The $3M super tax is now law. Here&rsquo;s how to restructure your SMSF to minimise the impact and still grow your retirement wealth.</p>
+          <div class="insight-card__meta"><span>May 2025</span><span class="insight-card__read">6 min read &rarr;</span></div>
+        </article>
+        <article class="insight-card glass-card reveal-up delay-3" id="insight-3">
+          <div class="insight-card__tag" style="color:#F59E0B;background:rgba(245,158,11,0.12)">Business</div>
+          <h4 class="insight-card__title">Sole Trader vs. Company: The $50K Decision Most Australians Get Wrong</h4>
+          <p class="insight-card__excerpt">Your business structure is your most powerful tax tool. We break down exactly when to make the switch &mdash; and what it costs if you wait too long.</p>
+          <div class="insight-card__meta"><span>April 2025</span><span class="insight-card__read">10 min read &rarr;</span></div>
+        </article>
+      </div>
+      <div class="insights__cta-wrap">
+        <a href="#insights" class="btn btn--ghost" id="insights-all-btn">View All Insights &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__bg"></div>
+    <div class="section-container">
+      <div class="section-label reveal-fade" id="test-label">CLIENT STORIES</div>
+      <h2 class="section-title reveal-up" id="test-title">
+        Don&rsquo;t take our word<br/><span class="gradient-text">for it.</span>
+      </h2>
+      <div class="testimonials__grid">
+        <div class="testimonial-card glass-card reveal-up delay-1" id="test-1">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__quote">&ldquo;Qbiztax saved us over $28,000 in our first year alone. They found deductions our previous accountant never even mentioned. Absolute game changer.&rdquo;</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background:linear-gradient(135deg,#4F46E5,#7C3AED)">SL</div>
+            <div>
+              <div class="testimonial-card__name">Sarah L.</div>
+              <div class="testimonial-card__role">Founder, Sydney E-Commerce Brand</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass-card reveal-up delay-2" id="test-2">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__quote">&ldquo;Finally, an accountant who explains things in plain English and doesn&rsquo;t charge by the minute. Our SMSF compliance went from a nightmare to completely hands-off.&rdquo;</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background:linear-gradient(135deg,#06B6D4,#0EA5E9)">MR</div>
+            <div>
+              <div class="testimonial-card__name">Michael R.</div>
+              <div class="testimonial-card__role">Property Investor, Melbourne</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass-card reveal-up delay-3" id="test-3">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__quote">&ldquo;We scaled from $500K to $2.1M turnover in 18 months. Qbiztax had the right structure in place before we even needed it. That&rsquo;s proactive advisory.&rdquo;</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background:linear-gradient(135deg,#F59E0B,#EF4444)">JT</div>
+            <div>
+              <div class="testimonial-card__name">Jessica T.</div>
+              <div class="testimonial-card__role">CEO, Brisbane Construction Firm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__bg-glow"></div>
+    <div class="section-container">
+      <div class="contact__split">
+        <div class="contact__left reveal-left" id="contact-left">
+          <div class="section-label">GET IN TOUCH</div>
+          <h2 class="section-title" id="contact-title">
+            Let&rsquo;s talk about<br/><span class="gradient-text">your money.</span>
+          </h2>
+          <p class="contact__desc" id="contact-desc">
+            Book a free 30-minute strategy call. No obligation. No jargon. 
+            Just an honest conversation about where your finances stand and how we can help.
+          </p>
+          <div class="contact__info-items">
+            <div class="contact__info-item" id="contact-email">
+              <div class="contact__info-icon">&#9993;</div>
+              <div>
+                <div class="contact__info-label">Email Us</div>
+                <a href="mailto:hello@qbiztax.com.au" class="contact__info-val">hello@qbiztax.com.au</a>
+              </div>
+            </div>
+            <div class="contact__info-item" id="contact-phone">
+              <div class="contact__info-icon">&#128222;</div>
+              <div>
+                <div class="contact__info-label">Call Us</div>
+                <a href="tel:+61299999999" class="contact__info-val">+61 2 9999 9999</a>
+              </div>
+            </div>
+            <div class="contact__info-item" id="contact-location">
+              <div class="contact__info-icon">&#128205;</div>
+              <div>
+                <div class="contact__info-label">Location</div>
+                <div class="contact__info-val">Australia-Wide (Remote &amp; In-Person)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__right reveal-right" id="contact-right">
+          <form class="contact__form glass-card" id="contact-form" novalidate>
+            <h3 class="contact__form-title">Book Your Free Strategy Call</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" class="form-input" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" class="form-input" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="jane@yourcompany.com.au" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+61 4XX XXX XXX" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">I need help with</label>
+              <select id="service" name="service" class="form-input form-select">
+                <option value="">Select a service...</option>
+                <option value="tax">Tax Returns</option>
+                <option value="bookkeeping">Bookkeeping &amp; Payroll</option>
+                <option value="advisory">Business Advisory</option>
+                <option value="smsf">SMSF</option>
+                <option value="all">All of the above</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Anything else?</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us briefly about your situation..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="contact-submit">
+              <span>Book My Free Call</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <p class="form-privacy">&#128274; Your information is 100% private. We never spam.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo footer__logo">
+            <div class="nav__logo-icon">Q</div>
+            <div class="nav__logo-text">
+              <span class="nav__brand">biztax</span>
+              <span class="nav__tagline">PLAN &middot; SAVE &middot; GROW</span>
+            </div>
+          </a>
+          <p class="footer__brand-desc">Australia&rsquo;s modern tax and business advisory firm. We help you keep more, stress less, and grow faster.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" id="social-linkedin" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="footer__social" id="social-facebook" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social" id="social-instagram" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links-group">
+          <h4 class="footer__group-title">Services</h4>
+          <ul class="footer__links">
+            <li><a href="#tax-returns" class="footer__link">Tax Returns</a></li>
+            <li><a href="#bookkeeping" class="footer__link">Bookkeeping &amp; Payroll</a></li>
+            <li><a href="#advisory" class="footer__link">Business Advisory</a></li>
+            <li><a href="#advisory" class="footer__link">SMSF Management</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-group">
+          <h4 class="footer__group-title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="#about" class="footer__link">About Us</a></li>
+            <li><a href="#insights" class="footer__link">Insights</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <h4 class="footer__group-title">Free Tax Tips</h4>
+          <p class="footer__newsletter-desc">Join 2,000+ Australians getting monthly tax-saving insights.</p>
+          <form class="footer__form" id="footer-form">
+            <input type="email" class="footer__input" placeholder="your@email.com.au" id="footer-email" />
+            <button type="submit" class="footer__btn" id="footer-subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__legal">&copy; 2025 Qbiztax Pty Ltd. ABN: XX XXX XXX XXX. All rights reserved.</p>
+        <p class="footer__legal">ATO Registered Tax Agent. General information only &mdash; not personal financial advice.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Use</a>
+          <a href="#" class="footer__link">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="form-toast">
+    <div class="toast__icon">&#10003;</div>
+    <div class="toast__text">
+      <strong>We&rsquo;ll be in touch!</strong><br/>Expect a call within 1 business day.
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
